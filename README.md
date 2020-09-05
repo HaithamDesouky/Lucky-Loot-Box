@@ -1,1 +1,1 @@
-# Lucky-Loot-Box
+# Full Stack React Social Media & E-Commerce Application
