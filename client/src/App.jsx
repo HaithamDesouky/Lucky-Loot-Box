@@ -17,8 +17,6 @@ import Navbar from './components/Navbar';
 import ProtectedRoute from './components/ProtectedRoute';
 import AdminRoute from './components/AdminRoute';
 import OrderView from './views/OrderView';
-
-// import { useHistory } from 'react-router-dom';
 import AllItemsView from './views/Admin/AllItemsView';
 import AdminArea from './views/Admin/AdminArea';
 import UserProfile from './views/Social/UserProfile';

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './HomeView.scss';
-import game from './game.png';
-import movie from './movie.png';
-import clothes from './clothes.png';
+
+import { render } from 'react-dom';
+import ItemsCarousel from '../../components/ItemsCarousel';
+
 // import { listProducts } from '../services/product';
 
 // import ProductItem from '../components/ProductItem';
@@ -32,18 +33,8 @@ class HomeView extends Component {
           </Link>
         </div>
 
-        <div className="second">
-          <div className="items">
-            <img src={game} alt="" /> Magnetic Katamari Damacy Figure
-          </div>
-          <div className="items">
-            <img src={movie} alt="" />
-            Aliens Pencil Sharpener
-          </div>
-          <div className="items">
-            <img src={clothes} alt="" />
-            Spider-Man T-shirt
-          </div>
+        <div className="second carousel">
+          <ItemsCarousel />
         </div>
 
         <div className="third">
