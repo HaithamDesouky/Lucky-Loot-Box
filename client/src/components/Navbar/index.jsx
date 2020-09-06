@@ -20,13 +20,15 @@ class NavBar extends React.Component {
   render() {
     return (
       <Navbar
+        onClick={() => this.closeMenu()}
         isOpen={this.state.menuOpen}
         onStateChange={state => this.handleStateChange(state)}
         {...this.props}
       >
-        {/* <Link to="/" class="home">
-        IronLootBox
-      </Link> */}
+        <Link onClick={() => this.closeMenu()} to="/" class="home">
+          Lucky LootBox
+        </Link>
+
         <Link onClick={() => this.closeMenu()} to="/" class="home">
           Home
         </Link>
@@ -39,13 +41,25 @@ class NavBar extends React.Component {
 
         {(this.props.user && (
           <>
-            <Link onClick={() => this.closeMenu()} to="/post/create">
+            <Link
+              class="bm-item white-link"
+              onClick={() => this.closeMenu()}
+              to="/post/create"
+            >
               Create a post
             </Link>
-            <Link onClick={() => this.closeMenu()} to="/credits">
+            <Link
+              class="bm-item white-link"
+              onClick={() => this.closeMenu()}
+              to="/credits"
+            >
               Credits: {this.props.user.credits}
             </Link>
-            <Link onClick={() => this.closeMenu()} to="/checkout">
+            <Link
+              class="bm-item white-link"
+              onClick={() => this.closeMenu()}
+              to="/checkout"
+            >
               Checkout
             </Link>
 
@@ -56,6 +70,7 @@ class NavBar extends React.Component {
             )}
             <>
               <Link
+                class="bm-item white-link"
                 onClick={() => this.closeMenu()}
                 to={`/user/${this.props.user._id}`}
               >
@@ -68,8 +83,20 @@ class NavBar extends React.Component {
           </>
         )) || (
           <>
-            <Link to="/authentication/sign-up">Sign Up</Link>
-            <Link to="/authentication/sign-in">Sign In</Link>
+            <Link
+              onClick={() => this.closeMenu()}
+              id="authentication-link"
+              to="/authentication/sign-up"
+            >
+              Sign Up
+            </Link>
+            <Link
+              onClick={() => this.closeMenu()}
+              id="authentication-link"
+              to="/authentication/sign-in"
+            >
+              Sign In
+            </Link>
           </>
         )}
       </Navbar>

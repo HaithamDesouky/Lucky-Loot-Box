@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { loadMe, signOut } from './services/authentication';
-import NewsFeed from './views/NewsFeed';
+import NewsFeed from './views/NewsFeed/NewsFeed';
 import SinglePostView from './views/Post/SingleView';
 import PostEditView from './views/Post/EditView';
 import PostCreationView from './views/Post/CreationView';

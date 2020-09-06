@@ -15,14 +15,21 @@ body {
   position: relative;
 }
 
-.bm-item {
+.bm-item,
+#authentication-link {
   display: inline-block;
 
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
-  color: #ff8400;
+  color: black;
   transition: color 0.2s;
+  font-size: 1.7rem;
+}
+
+#authentication-link {
+  display: block;
+  color: white;
 }
 
 .bm-item:hover {
@@ -55,8 +62,8 @@ body {
 
 /* General sidebar styles */
 .bm-menu {
-  background: black;
-  padding: 2.5em 1.5em 0;
+  background: rgba(255, 132, 0, 0.95);
+  padding: 1.5em 1.5em 0;
   font-size: 1.15em;
 }
 
@@ -70,6 +77,12 @@ body {
   color: #b8b7ad;
 }
 
+.white-link {
+  color: white;
+}
+.white-link:hover {
+  color: black;
+}
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
@@ -81,4 +94,23 @@ body {
   justify-content: center;
   margin-top: 2rem;
   border-radius: 8%;
+  background-color: black;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .bm-menu {
+    width: 90%;
+  }
+
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+    margin-right: 2rem;
+    color: black;
+  }
+
+  #signout {
+    margin: 0;
+  }
 }

@@ -5,10 +5,7 @@ import './style.scss';
 const Order = props => {
   console.log('lolol', props);
   return (
-    <Link
-      to={`/order/${props._id}`}
-      className="individual-item individual-order"
-    >
+    <Link to={`/order/${props._id}`} className="individual-order">
       <div>
         <strong>
           {' '}
@@ -25,8 +22,21 @@ const Order = props => {
         </strong>
         {
           /* <p>{description}</p>*/
-          <small>Date: {new Date(props.creationDate).toGMTString()}</small>
+          <small>
+            {' '}
+            <span>Date:</span> {new Date(props.creationDate).toGMTString()}
+          </small>
         }
+
+        <span>
+          <Link
+            to={`/order/${props._id}`}
+            className="home-links"
+            id="view-order"
+          >
+            View more details
+          </Link>
+        </span>
       </div>
     </Link>
   );
