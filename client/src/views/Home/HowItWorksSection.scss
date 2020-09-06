@@ -1,21 +1,31 @@
 #section-header {
-  padding: 2rem;
+  padding: 1rem 0 0 0;
 }
 
 #about {
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1rem 7rem;
 }
 
 .about-right-side {
-  width: 60%;
+  flex: 0 0 40%;
 }
 
 .about-left-side {
-  width: 30%;
+  flex: 0 0 30%;
 }
+
+.vertical-boxes {
+  flex: 0 0 30%;
+
+  img {
+    height: 85%;
+  }
+}
+
 #about img {
   border-radius: 5px;
   margin: 0.1rem;
@@ -60,5 +70,26 @@
 
   li {
     padding: 0.3rem;
+  }
+}
+
+.outer-div {
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  #about {
+    padding: 0;
+  }
+  .about-right-side {
+    flex: 0 0 100%;
+  }
+
+  .about-left-side {
+    flex: 0 0 80%;
+  }
+
+  .vertical-boxes {
+    display: none;
   }
 }
