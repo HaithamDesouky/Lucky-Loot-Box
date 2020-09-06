@@ -77,7 +77,7 @@ class SinglePostView extends Component {
               <img src={post.photo} alt={post.content} id="post-img" />
             )}
             <p>{post.content}</p>
-            <small> {post.creationDate}</small>
+            <small> {new Date(post.creationDate).toGMTString()}</small>
             {/* <Link to={`/post/${this.props.match.params.id}/edit`}>
               Edit Post
             </Link> */}

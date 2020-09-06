@@ -45,7 +45,7 @@ class ShopView extends Component {
           ))}
 
           <Link className="home-links" id="checkout-button" to="/checkout">
-            Checkout
+            Go to checkout
           </Link>
         </div>
       </div>

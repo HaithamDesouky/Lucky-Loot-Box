@@ -32,7 +32,7 @@ class NewsFeed extends Component {
       <div className="news-container">
         <div className="newsBox">
           <div className="post-group">
-            <h1>Community Loot!</h1>
+            <h1>Community Loot</h1>
 
             <h4>Here are all the items our members have won!</h4>
             <div className="post-list">
@@ -42,7 +42,7 @@ class NewsFeed extends Component {
             </div>
 
             <Link className="home-links" id="share" to="/post/create">
-              Show off your prizes!
+              Click here to show off your prizes!
             </Link>
           </div>
         </div>

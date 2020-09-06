@@ -12,7 +12,7 @@ const PostItem = ({ _id, content, creationDate, creator, photo }) => {
       <div>
         <br />
         <strong>{content}</strong>
-        <span>User: {creator.name}</span>
+        <span>Author: {creator.name}</span>
         <small>{new Date(creationDate).toGMTString()}</small>
       </div>
     </Link>

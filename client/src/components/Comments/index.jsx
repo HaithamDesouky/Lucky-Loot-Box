@@ -5,7 +5,7 @@ import defaultPhoto from './default.png';
 
 const Comment = ({ _id, creator, content, createdAt }) => {
   return (
-    <Link to={`/items/${_id}`} className="individual-item">
+    <Link to={`/items/${_id}`} className="individual-comment">
       {(creator.photo && <img src={creator.photo} alt={content} />) || (
         <img src={defaultPhoto} alt={content} />
       )}
