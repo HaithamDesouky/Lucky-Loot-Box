@@ -7,6 +7,7 @@ import ItemsCarousel from '../../components/ItemsCarousel';
 import coins from './treasurechest.png';
 import './HowItWorksSection.scss';
 import './MysteryBox.scss';
+import './CarouselSection.scss';
 
 import lootboxes from './lootboxes.png';
 import mysterybox from './mystery.png';
@@ -114,7 +115,8 @@ class HomeView extends Component {
           </div>
         </section>
 
-        <div className="second carousel">
+        <div className="carousel-div carousel">
+          <h1>What's inside?</h1>
           <ItemsCarousel />
         </div>
 
