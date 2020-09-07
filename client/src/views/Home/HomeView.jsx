@@ -48,7 +48,7 @@ class HomeView extends Component {
               {' '}
               <span className="orange-tag">Step 1:</span> Buy Credits
             </h2>
-            <img src={coins} alt="about image" />
+            <img src={coins} alt="about image" id="treasure-credits" />
 
             <p>
               Here in Lucky Loot Box, our main currency are credits! You can buy
@@ -66,7 +66,8 @@ class HomeView extends Component {
                   lootbox!
                 </h2>
                 <p>
-                  We have 3 types of boxes that contain <strong>3</strong> items
+                  We have 3 types of boxes that contain{' '}
+                  <span className="orange-tag">3 items </span>
                   chosen at random, in the category of your choice. Every time
                   you buy a Lucky LootBox you are{' '}
                   <span className="orange-tag">
@@ -77,13 +78,13 @@ class HomeView extends Component {
                 <h3>The 3 catergories are: </h3>
                 <ul>
                   <li>
-                    <i class="fas fa-tv"></i> Anime
+                    <i class="fas fa-tv orange-tag"></i> Anime
                   </li>
                   <li>
-                    <i class="fas fa-gamepad"></i> Video Games
+                    <i class="fas fa-gamepad orange-tag"></i> Video Games
                   </li>
                   <li>
-                    <i class="fas fa-film"></i> Entertainment{' '}
+                    <i class="fas fa-film orange-tag"></i> Entertainment{' '}
                   </li>
                 </ul>
               </div>
@@ -96,18 +97,21 @@ class HomeView extends Component {
 
         <section className="mystery-box">
           <h1>The Mystery Box</h1>
-          <img src={mysterybox} alt="" />
-          <p>
-            For just <span className="orange-tag">75 credits</span> extra you
-            can try your hand at the{' '}
-            <span className="orange-tag">MYSTERY BOX!</span>
+          <div>
+            <img src={mysterybox} alt="MysteryBox" />
             <p>
-              The Mystery Box contains <span className="orange-tag">FIVE</span>{' '}
-              items! Yup, not three but{' '}
-              <span className="orange-tag">FIVE!</span> However, the categories
-              are chosen at random! It's up to you to take on the risk!
+              For just <span className="orange-tag">75 credits</span> extra you
+              can try your hand at the{' '}
+              <span className="orange-tag">MYSTERY BOX!</span>
+              <p>
+                The Mystery Box contains{' '}
+                <span className="orange-tag">FIVE</span> items! Yup, not three
+                but <span className="orange-tag">FIVE!</span> However, the
+                categories are chosen at random! It's up to you to take on the
+                risk!
+              </p>
             </p>
-          </p>
+          </div>
         </section>
 
         <div className="second carousel">

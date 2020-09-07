@@ -10,26 +10,19 @@
   padding: 1rem 7rem;
 }
 
-.about-right-side {
-  flex: 0 0 40%;
-}
-
 .about-left-side {
   flex: 0 0 30%;
 }
-
+.about-right-side {
+  flex: 0 0 50%;
+}
 .vertical-boxes {
-  flex: 0 0 30%;
+  flex: 0 0 20%;
 
   img {
-    height: 85%;
+    max-width: 80%;
+    max-height: 80%;
   }
-}
-
-#about img {
-  border-radius: 5px;
-  margin: 0.1rem;
-  width: 50%;
 }
 
 #about a {
@@ -77,16 +70,38 @@
   display: flex;
 }
 
+#treasure-credits {
+  border-radius: 5px;
+  margin: 0.1rem;
+  width: 50%;
+}
+
 @media screen and (max-width: 800px) {
   #about {
     padding: 0;
   }
   .about-right-side {
     flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    li {
+      padding: 0.3rem;
+      display: table;
+      margin-left: 25%;
+    }
   }
 
   .about-left-side {
     flex: 0 0 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .vertical-boxes {
