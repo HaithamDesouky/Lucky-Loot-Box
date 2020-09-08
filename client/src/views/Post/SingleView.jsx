@@ -5,6 +5,7 @@ import CommentInput from '../../components/Post/Comments';
 import { createComment } from './../../services/comments';
 import Comments from '../../components/Comments';
 import './SingleView.scss';
+import defaultPhoto from '../../components/Item/default.png';
 
 class SinglePostView extends Component {
   constructor() {
@@ -74,9 +75,9 @@ class SinglePostView extends Component {
         {(this.state.loaded && (
           <>
             <h1> {post.creator.name}'s post </h1>
-            {post.photo && (
+            {(post.photo && (
               <img src={post.photo} alt={post.content} id="post-img" />
-            )}
+            )) || <img src={defaultPhoto} alt={post.content} id="post-img" />}
             <p>{post.content}</p>
             <small> {new Date(post.creationDate).toGMTString()}</small>
             {/* <Link to={`/post/${this.props.match.params.id}/edit`}>
