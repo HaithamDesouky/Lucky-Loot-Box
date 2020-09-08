@@ -1,0 +1,28 @@
+.carousel-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+
+  p {
+    text-align: center;
+  }
+}
+
+.carousel-wrapper {
+  max-width: 30vw;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+#lone-link {
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .carousel-wrapper {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+}

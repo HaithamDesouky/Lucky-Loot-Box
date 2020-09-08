@@ -26,7 +26,7 @@
 
 .greeting {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url('loot_boxes.jpg');
+    url('./loot_boxes.jpg');
   width: 100vw;
   height: 70vh;
   background-position: center; /* Center the image */
@@ -51,22 +51,6 @@
   }
 }
 
-// CAROUSEL SECTION
-.carousel-wrapper {
-  max-width: 30vw;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-
-// .items {
-//   width: 20vh;
-//   height: 20vh;
-//   text-align: center;
-//   color: white;
-//   justify-content: center;
-//   display: flex;
-//   flex-direction: column;
-// }
 #lone-link {
   margin-bottom: 4rem;
 }
@@ -89,11 +73,5 @@
 
   #lone-link {
     width: 70%;
-  }
-
-  .carousel-wrapper {
-    max-width: 100vw;
-    margin: 20px auto;
-    padding: 0 20px;
   }
 }

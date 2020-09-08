@@ -1,0 +1,25 @@
+footer {
+  background: #ff8400;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100vw;
+  align-self: flex-end;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      color: black;
+
+      padding-left: 1rem;
+      list-style: none;
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
