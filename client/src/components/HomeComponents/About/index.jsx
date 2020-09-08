@@ -25,7 +25,9 @@ export default function index() {
             those with real money using a credit or debit card or by
             participating in our community!
           </p>
-          <Link to="/credits">Buy Credits Now!</Link>
+          <Link to="/credits" className="home-links">
+            Buy Credits Now!
+          </Link>
         </div>
 
         <div className="about-right-side">
