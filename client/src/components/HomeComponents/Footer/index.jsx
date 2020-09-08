@@ -1,32 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './index.scss';
 
 export default function index() {
   return (
     <footer id="footer">
-      <ul class="social-icon">
-        <li>Copyright © 2020 BandFinder | Contact us: </li>
-        <li>
-          <i className="fab fa-github"></i>
-        </li>
+      <div>
+        <p>Haitham Desouky</p>
 
-        <li>
-          <i className="fab fa-react"></i>
-        </li>
-        <li>
-          <i className="fab fa-twitter"></i>
-        </li>
-        <li>
-          <i className="fab fa-instagram"></i>
-        </li>
-        <li>
-          {' '}
-          <i className="fab fa-facebook"></i>
-        </li>
-        <li>
-          <i className="fab fa-linkdin-in"></i>
-        </li>
-      </ul>
+        <ul class="social-icon">
+          <li>
+            <a href="https://www.linkedin.com/in/haitham-desouky-b862b545/">
+              {' '}
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/HaithamDesouky">
+              {' '}
+              <i className="fab fa-github"></i>
+            </a>
+          </li>
+
+          <li>
+            <i className="fab fa-linkdin-in"></i>
+          </li>
+        </ul>
+      </div>
     </footer>
   );
 }

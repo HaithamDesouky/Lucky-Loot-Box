@@ -1,12 +1,10 @@
-.singleview-container {
+#singlepost {
   margin-top: 5rem;
   width: 70%;
+  margin: 0 auto;
 
-  #post-img {
-    margin: 0 auto;
-    display: block;
-    width: 50%;
-    padding: 3rem;
+  h1 {
+    padding-top: 3rem;
   }
 
   button {
@@ -15,8 +13,6 @@
 
   button:hover {
     background-color: black;
-  }
-  img {
   }
 
   small {
@@ -29,19 +25,31 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .singleview-container {
-    padding: 3rem;
-    width: 100%;
-
-    .individual-item {
-      display: flex;
-      flex-direction: column;
-    }
-  }
+#post-img {
+  margin: 0 auto;
+  display: block;
+  width: 40%;
+  padding: 3rem;
 }
 
-#singlepost {
-  margin-top: 2em;
-  height: 100%;
+@media only screen and (max-width: 600px) {
+  .individual-item {
+    display: flex;
+    flex-direction: column;
+  }
+  #singlepost {
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+
+    #post-img {
+      width: 100%;
+    }
+
+    a {
+      width: 50%;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
 }

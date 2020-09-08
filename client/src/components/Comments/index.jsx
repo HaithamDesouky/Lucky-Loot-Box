@@ -5,7 +5,7 @@ import defaultPhoto from './default.png';
 
 const Comment = ({ _id, creator, content, createdAt }) => {
   return (
-    <Link to={`/items/${_id}`} className="individual-comment">
+    <div className="individual-comment">
       {(creator.photo && <img src={creator.photo} alt={content} />) || (
         <img src={defaultPhoto} alt={content} />
       )}
@@ -14,7 +14,7 @@ const Comment = ({ _id, creator, content, createdAt }) => {
         <p>{content}</p>
         <small>{new Date(createdAt).toGMTString()}</small>
       </div>
-    </Link>
+    </div>
   );
 };
 

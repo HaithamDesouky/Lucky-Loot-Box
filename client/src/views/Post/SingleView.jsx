@@ -70,9 +70,10 @@ class SinglePostView extends Component {
   render() {
     const post = this.state.post;
     return (
-      <div className="singleview-container" id="singlepost">
+      <div id="singlepost">
         {(this.state.loaded && (
           <>
+            <h1> {post.creator.name}'s post </h1>
             {post.photo && (
               <img src={post.photo} alt={post.content} id="post-img" />
             )}
@@ -93,6 +94,11 @@ class SinglePostView extends Component {
             {this.state.comments.map(eachComment => (
               <Comments {...eachComment} key={eachComment._id} />
             ))}
+
+            <Link to="/social/newsfeed" className="home-links">
+              {' '}
+              Back to Newsfeed{' '}
+            </Link>
           </>
         )) || <p>Loading...</p>}
       </div>

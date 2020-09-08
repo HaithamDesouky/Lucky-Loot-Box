@@ -46,60 +46,54 @@ class AuthenticationSignUpView extends Component {
 
   render() {
     return (
-      <div className="form-box">
-        <div className="form-div">
-          <h2>Join our community!</h2>
-          <form className="form-signup" onSubmit={this.handleFormSubmission}>
-            <label htmlFor="input-name"></label>
-            <input
-              className="form"
-              id="input-name"
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              value={this.state.name}
-              onChange={this.handleInputChange}
-            />
+      <div className="form-div">
+        <h2>Join our community!</h2>
+        <form className="form-signup" onSubmit={this.handleFormSubmission}>
+          <label htmlFor="input-name"></label>
+          <input
+            className="form"
+            id="input-name"
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            value={this.state.name}
+            onChange={this.handleInputChange}
+          />
 
-            <label htmlFor="input-email"></label>
-            <input
-              className="form"
-              id="input-email"
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={this.state.email}
-              onChange={this.handleInputChange}
-            />
+          <label htmlFor="input-email"></label>
+          <input
+            className="form"
+            id="input-email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={this.state.email}
+            onChange={this.handleInputChange}
+          />
 
-            <label htmlFor="input-password"></label>
-            <input
-              className="form"
-              id="input-password"
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={this.state.password}
-              onChange={this.handleInputChange}
-            />
-            <label htmlFor="photo">Profile Photo</label>
-            <input
-              className="form"
-              type="file"
-              name="photo"
-              onChange={this.handlePhotoInputChange}
-            />
-            <div className="buttons">
-              <button
-                class="btn-form"
-                data-sm-link-text="CLICK"
-                target="_blank"
-              >
-                Sign Up
-              </button>
-            </div>
-          </form>
-        </div>
+          <label htmlFor="input-password"></label>
+          <input
+            className="form"
+            id="input-password"
+            type="password"
+            name="password"
+            placeholder="Password"
+            value={this.state.password}
+            onChange={this.handleInputChange}
+          />
+          <label htmlFor="photo">Profile Photo</label>
+          <input
+            className="form"
+            type="file"
+            name="photo"
+            onChange={this.handlePhotoInputChange}
+          />
+          <div className="buttons">
+            <button class="btn-form" data-sm-link-text="CLICK" target="_blank">
+              Sign Up
+            </button>
+          </div>
+        </form>
       </div>
     );
   }

@@ -40,50 +40,48 @@ class AuthenticationSignInView extends Component {
 
   render() {
     return (
-      <div className="form-box">
-        <div className="form-div">
-          <h2>Sign In</h2>
-          <form
-            className="
+      <div className="form-div">
+        <h2>Sign In</h2>
+        <form
+          className="
 form-signup"
-            onSubmit={this.handleFormSubmission}
-          >
-            <label htmlFor="input-email"></label>
-            <input
-              className="form"
-              id="input-email"
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={this.state.email}
-              onChange={this.handleInputChange}
-              required
-            />
+          onSubmit={this.handleFormSubmission}
+        >
+          <label htmlFor="input-email"></label>
+          <input
+            className="form"
+            id="input-email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={this.state.email}
+            onChange={this.handleInputChange}
+            required
+          />
 
-            <label htmlFor="input-password"></label>
-            <input
-              className="form"
-              id="input-password"
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={this.state.password}
-              onChange={this.handleInputChange}
-              required
-              minLength="1"
-            />
+          <label htmlFor="input-password"></label>
+          <input
+            className="form"
+            id="input-password"
+            type="password"
+            name="password"
+            placeholder="Password"
+            value={this.state.password}
+            onChange={this.handleInputChange}
+            required
+            minLength="1"
+          />
 
-            {this.state.error && (
-              <div className="error-block">
-                <p>There was an error submiting the form:</p>
-                <p>{this.state.error.message}</p>
-              </div>
-            )}
-            <div className="buttons">
-              <button class="btn-form">Sign In</button>
+          {this.state.error && (
+            <div className="error-block">
+              <p>There was an error submiting the form:</p>
+              <p>{this.state.error.message}</p>
             </div>
-          </form>
-        </div>
+          )}
+          <div className="buttons">
+            <button class="btn-form">Sign In</button>
+          </div>
+        </form>
       </div>
     );
   }

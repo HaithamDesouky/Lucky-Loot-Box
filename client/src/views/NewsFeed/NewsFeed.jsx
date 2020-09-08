@@ -29,23 +29,19 @@ class NewsFeed extends Component {
 
   render() {
     return (
-      <div className="news-container">
-        <div className="newsBox">
-          <div className="post-group">
-            <h1>Community Loot</h1>
+      <div className="post-group">
+        <h1>Community Loot</h1>
 
-            <h4>Here are all the items our members have won!</h4>
-            <div className="post-list">
-              {this.state.posts.map(post => (
-                <PostItem {...post} key={post._id} />
-              ))}
-            </div>
-
-            <Link className="home-links" id="share" to="/post/create">
-              Click here to show off your prizes!
-            </Link>
-          </div>
+        <h4>Here are all the items our members have won!</h4>
+        <div className="post-list">
+          {this.state.posts.map(post => (
+            <PostItem {...post} key={post._id} />
+          ))}
         </div>
+
+        <Link className="home-links" id="share" to="/post/create">
+          Click here to show off your prizes!
+        </Link>
       </div>
     );
   }
