@@ -16,9 +16,9 @@ body {
 }
 
 .bm-item,
-#authentication-link {
+.home,
+#authentication-NavLink {
   display: inline-block;
-
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
@@ -27,7 +27,7 @@ body {
   font-size: 1.7rem;
 }
 
-#authentication-link {
+#authentication-NavLink {
   display: block;
   color: white;
 }
@@ -97,6 +97,11 @@ body {
   border-radius: 8%;
   background-color: black;
   padding: 0.5rem;
+}
+
+.selected {
+  border-left: 5px solid black;
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 800px) {

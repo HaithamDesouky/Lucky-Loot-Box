@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './nav.scss';
 import { slide as Navbar } from 'react-burger-menu';
 class NavBar extends React.Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
       menuOpen: false
@@ -25,57 +25,83 @@ class NavBar extends React.Component {
         onStateChange={state => this.handleStateChange(state)}
         {...this.props}
       >
-        <Link onClick={() => this.closeMenu()} to="/" class="home">
+        <NavLink
+          activeClassName="selected"
+          onClick={() => this.closeMenu()}
+          to="/"
+          class="home"
+        >
           Lucky LootBox
-        </Link>
+        </NavLink>
 
-        <Link onClick={() => this.closeMenu()} to="/" class="home">
+        <NavLink
+          activeClassName="selected"
+          onClick={() => this.closeMenu()}
+          to="/"
+          class="home"
+        >
           Home
-        </Link>
-        <Link onClick={() => this.closeMenu()} to="/shop">
+        </NavLink>
+        <NavLink
+          activeClassName="selected"
+          onClick={() => this.closeMenu()}
+          to="/shop"
+        >
           Shop
-        </Link>
-        <Link onClick={() => this.closeMenu()} to="/social/newsfeed">
+        </NavLink>
+        <NavLink
+          activeClassName="selected"
+          onClick={() => this.closeMenu()}
+          to="/social/newsfeed"
+        >
           Social Area
-        </Link>
+        </NavLink>
 
         {(this.props.user && (
           <>
-            <Link
-              class="bm-item white-link"
+            <NavLink
+              activeClassName="selected"
+              class="bm-item white-NavLink"
               onClick={() => this.closeMenu()}
               to="/post/create"
             >
               Create a post
-            </Link>
-            <Link
-              class="bm-item white-link"
+            </NavLink>
+            <NavLink
+              activeClassName="selected"
+              class="bm-item white-NavLink"
               onClick={() => this.closeMenu()}
               to="/credits"
             >
               Credits: {this.props.user.credits}
-            </Link>
-            <Link
-              class="bm-item white-link"
+            </NavLink>
+            <NavLink
+              activeClassName="selected"
+              class="bm-item white-NavLink"
               onClick={() => this.closeMenu()}
               to="/checkout"
             >
               Checkout
-            </Link>
+            </NavLink>
 
             {this.props.user.admin && (
-              <Link onClick={() => this.closeMenu()} to="/admin">
+              <NavLink
+                activeClassName="selected"
+                onClick={() => this.closeMenu()}
+                to="/admin"
+              >
                 Admin
-              </Link>
+              </NavLink>
             )}
             <>
-              <Link
-                class="bm-item white-link"
+              <NavLink
+                activeClassName="selected"
+                class="bm-item white-NavLink"
                 onClick={() => this.closeMenu()}
                 to={`/user/${this.props.user._id}`}
               >
                 {this.props.user.name}
-              </Link>
+              </NavLink>
               <button id="signout" onClick={this.props.onSignOut}>
                 <span>Sign Out</span>
               </button>
@@ -83,20 +109,20 @@ class NavBar extends React.Component {
           </>
         )) || (
           <>
-            <Link
+            <NavLink
               onClick={() => this.closeMenu()}
-              id="authentication-link"
+              id="authentication-NavLink"
               to="/authentication/sign-up"
             >
               Sign Up
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               onClick={() => this.closeMenu()}
-              id="authentication-link"
+              id="authentication-NavLink"
               to="/authentication/sign-in"
             >
               Sign In
-            </Link>
+            </NavLink>
           </>
         )}
       </Navbar>
