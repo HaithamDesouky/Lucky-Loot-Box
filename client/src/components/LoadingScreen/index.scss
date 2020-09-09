@@ -1,0 +1,60 @@
+$charade: #282a37;
+$orange: #ff8400;
+
+#loading-screen {
+  display: flex;
+  height: 93vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+
+  h4 {
+    font-size: 2rem;
+  }
+}
+
+.fancy-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+
+  div {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+
+    &.ring {
+      border-width: 0.5rem;
+      border-style: solid;
+      border-color: transparent;
+      animation: 2s fancy infinite alternate;
+
+      &:nth-child(1) {
+        border-left-color: $orange;
+        border-right-color: $orange;
+      }
+      &:nth-child(2) {
+        border-top-color: $orange;
+        border-bottom-color: $orange;
+        animation-delay: 1s;
+      }
+    }
+
+    &.dot {
+      width: 1rem;
+      height: 1rem;
+      background: $orange;
+    }
+  }
+}
+
+@keyframes fancy {
+  to {
+    transform: rotate(360deg) scale(0.5);
+  }
+}

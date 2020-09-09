@@ -21,6 +21,7 @@ import AllItemsView from './views/Admin/AllItemsView';
 import AdminArea from './views/Admin/AdminArea';
 import UserProfile from './views/Social/UserProfile';
 import Footer from './components/HomeComponents/Footer';
+import LoadingScreen from './components/LoadingScreen';
 
 import './App.scss';
 
@@ -235,11 +236,7 @@ class App extends Component {
             <Redirect from="/" to="/error" />
             {/* <Route path="/authentication/sign-in" component={AuthenticationSignInView} /> */}
           </Switch>
-        )) || (
-          <div>
-            <h1>Loading...</h1>
-          </div>
-        )}
+        )) || <LoadingScreen />}
         <Footer />
       </div>
     );

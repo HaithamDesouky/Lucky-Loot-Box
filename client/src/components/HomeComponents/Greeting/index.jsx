@@ -12,7 +12,7 @@ export default function index() {
         <br /> Scroll down to find out more!
       </h3>
 
-      <Link to="/shop" className="home-links">
+      <Link to="/shop" className="home-links animated-button">
         Check out our amazing boxes here
       </Link>
     </section>
