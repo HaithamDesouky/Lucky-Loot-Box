@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import coins from './treasurechest.png';
 import './index.scss';
-import lootboxes from './lootboxes.png';
 
 import React from 'react';
 
@@ -63,7 +62,20 @@ export default function index() {
           </div>
         </div>
         <div className="vertical-boxes">
-          <img src={lootboxes} alt="" />
+          <img
+            src={
+              'https://res.cloudinary.com/dztakmc4u/image/upload/v1598460739/animebox_2_pm69mf.png'
+            }
+            alt=""
+          />
+          <img
+            src="https://res.cloudinary.com/dztakmc4u/image/upload/v1598460740/animebox_fxsaas.png"
+            alt=""
+          />
+          <img
+            src="https://res.cloudinary.com/dztakmc4u/image/upload/v1598460740/animebox_1_gnwezq.png"
+            alt=""
+          />
         </div>
       </section>
     </div>

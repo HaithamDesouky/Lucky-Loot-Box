@@ -1,5 +1,4 @@
 $charade: #282a37;
-$orange: #ff8400;
 
 #loading-screen {
   display: flex;
@@ -35,12 +34,12 @@ $orange: #ff8400;
       animation: 2s fancy infinite alternate;
 
       &:nth-child(1) {
-        border-left-color: $orange;
-        border-right-color: $orange;
+        border-left-color: #ff8400;
+        border-right-color: #ff8400;
       }
       &:nth-child(2) {
-        border-top-color: $orange;
-        border-bottom-color: $orange;
+        border-top-color: #ff8400;
+        border-bottom-color: #ff8400;
         animation-delay: 1s;
       }
     }
@@ -48,7 +47,7 @@ $orange: #ff8400;
     &.dot {
       width: 1rem;
       height: 1rem;
-      background: $orange;
+      background: #ff8400;
     }
   }
 }

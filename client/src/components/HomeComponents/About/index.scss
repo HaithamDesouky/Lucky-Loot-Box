@@ -17,7 +17,7 @@
   flex: 0 0 50%;
 }
 .vertical-boxes {
-  flex: 0 0 20%;
+  flex: 0 0 15%;
 
   img {
     max-width: 80%;
@@ -77,6 +77,19 @@
   width: 50%;
 }
 
+.vertical-boxes {
+  max-height: 80%;
+
+  img {
+    transition: all 0.2s;
+    &:hover {
+      outline: 0.2rem solid #ff8400;
+      outline-offset: 0.3rem;
+      transform: scale(1.6) translateY(-0.5px);
+    }
+  }
+}
+
 @media screen and (max-width: 800px) {
   #about {
     padding: 0;
@@ -107,5 +120,11 @@
 
   .vertical-boxes {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .vertical-boxes {
+    flex: 0 0 20%;
   }
 }
