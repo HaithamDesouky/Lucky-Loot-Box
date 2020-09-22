@@ -48,31 +48,3 @@ function ItemsCarousel() {
 }
 
 export default ItemsCarousel;
-
-{
-  /* <Carousel id="carousel-component">
-          <div>
-            <img id="carousel-image" src={game} alt="" />
-            <p>Damacy Figure</p>
-          </div>
-          <div>
-            <img id="carousel-image" src={movie} alt="" />
-            <p>Aliens Pencil Sharpener</p>
-          </div>
-          <div>
-            <img id="carousel-image" src={clothes} alt="" />
-            <p>Spider-Man T-shirt</p>
-          </div>
-          <div>
-            <img id="carousel-image" src={portablegame} alt="" />
-            <p>Portable Video Game Console</p>
-          </div>
-          <div>
-            <img id="carousel-image" src={figurine} alt="" />
-            <p> Anime Figurines</p>
-          </div>
-          <div>
-            <img id="carousel-image" src={tamagotchi} alt="" />
-            <p> Classic Tamagotchi Games</p>
-          </div> */
-}

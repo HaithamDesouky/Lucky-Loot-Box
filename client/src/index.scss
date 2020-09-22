@@ -12,7 +12,13 @@ body {
 
 .App {
   min-width: 100vw;
-  margin-bottom: -65px;
+  margin-bottom: -50px;
+}
+
+@media screen and(max-width: 660px) {
+  .App {
+    margin-bottom: -65px;
+  }
 }
 
 body {
