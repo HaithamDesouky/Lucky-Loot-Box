@@ -89,6 +89,7 @@ class BuyCredits extends Component {
   render() {
     return (
       <div>
+        <h1>Buy Credits</h1>
         <Elements stripe={loadStripe(stripeApiPublicKey)}>
           <ElementsConsumer>
             {({ stripe, elements }) => (

@@ -1,9 +1,14 @@
 .post-form-container {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 95vh;
+  flex-direction: column;
   padding: 1rem;
-  margin-bottom: 3rem;
-  margin-top: -3em;
+}
+
+@media screen and (max-width: 660px) {
+  .post-form-container {
+    height: 100vh;
+  }
 }

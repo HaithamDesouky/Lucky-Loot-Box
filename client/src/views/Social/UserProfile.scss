@@ -1,10 +1,34 @@
 .profile {
-  margin-top: 5rem;
+  min-height: 93%;
+  h1:first-of-type {
+    padding-top: 2rem;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 25%;
+    border-radius: 10%;
+  }
   span {
     color: #ff8400;
   }
 
   p {
     text-align: center;
+  }
+}
+.order-container {
+  margin-bottom: 8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile {
+    img {
+      display: block;
+      margin: 0 auto;
+      padding-top: 1rem;
+      width: 50%;
+    }
   }
 }

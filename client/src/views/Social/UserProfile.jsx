@@ -42,6 +42,7 @@ export class UserProfile extends Component {
       <div class="profile">
         {this.state.loaded && (
           <div>
+            <h1>Your profile</h1>
             {(this.state.profile.user.photo && (
               <div>
                 <img src={this.state.profile.user.photo} alt="UserPhoto" />
@@ -61,16 +62,18 @@ export class UserProfile extends Component {
             <h1>Your orders</h1>
             <br />
 
-            {(this.state.orders.length &&
-              this.state.orders.map(order => {
-                return <Order {...order} key={order._id} />;
-              })) || (
-              <div>
-                {' '}
-                <p>'You have made no orders yet'</p>{' '}
-                <Link to="/buycredits"></Link>
-              </div>
-            )}
+            <div className="order-container">
+              {(this.state.orders.length &&
+                this.state.orders.map(order => {
+                  return <Order {...order} key={order._id} />;
+                })) || (
+                <div>
+                  {' '}
+                  <p>'You have made no orders yet'</p>{' '}
+                  <Link to="/buycredits"></Link>
+                </div>
+              )}
+            </div>
           </div>
         )}
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Footer from './components/HomeComponents/Footer';
 
 import './index.scss';
 
@@ -10,6 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

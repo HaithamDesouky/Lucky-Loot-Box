@@ -20,7 +20,6 @@ import OrderView from './views/OrderView';
 import AllItemsView from './views/Admin/AllItemsView';
 import AdminArea from './views/Admin/AdminArea';
 import UserProfile from './views/Social/UserProfile';
-import Footer from './components/HomeComponents/Footer';
 import LoadingScreen from './components/LoadingScreen';
 
 import './App.scss';
@@ -237,7 +236,6 @@ class App extends Component {
             {/* <Route path="/authentication/sign-in" component={AuthenticationSignInView} /> */}
           </Switch>
         )) || <LoadingScreen />}
-        <Footer />
       </div>
     );
   }

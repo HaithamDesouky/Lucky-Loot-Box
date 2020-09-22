@@ -3,11 +3,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 90%;
   width: 100%;
   button {
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
   .lootbox-single {
     width: 100%;
@@ -17,7 +16,31 @@
     margin-top: 4rem;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
   span {
     color: #ff8400;
+    font-size: 1.2rem;
+  }
+}
+
+.basket {
+  display: flex;
+  flex-wrap: wrap;
+
+  div {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .checkout-container {
+    padding: 2rem;
+  }
+  .basket {
+    div {
+      flex: 0 0 100%;
+    }
   }
 }

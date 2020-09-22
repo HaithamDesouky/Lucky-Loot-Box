@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './style.scss';
 
 const Order = props => {
-  console.log('lolol', props);
   return (
     <Link to={`/order/${props._id}`} className="individual-order">
       <div>

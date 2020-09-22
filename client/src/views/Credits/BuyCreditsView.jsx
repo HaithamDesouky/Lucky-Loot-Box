@@ -14,11 +14,8 @@ class BuyCreditsView extends Component {
 
   render() {
     return (
-      <div className="container credits-container ">
-        <div className="credits-div">
-          <h1>Buy Credits</h1>
-          <BuyCredits loadUser={this.props.loadUser} />
-        </div>
+      <div className="post-form-container">
+        <BuyCredits loadUser={this.props.loadUser} />
       </div>
     );
   }

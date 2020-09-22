@@ -35,7 +35,7 @@ class OrderView extends Component {
 
   render() {
     return (
-      <div className="singleview-container">
+      <div className="post-form-container">
         <div className="single-order">
           <h1>Your order</h1>
           {this.state.order && (

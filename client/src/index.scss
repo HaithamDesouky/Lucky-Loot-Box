@@ -4,12 +4,15 @@
   margin: 0;
   font-family: 'Space Mono', monospace;
 }
-html {
-  min-height: 100%;
+html,
+.App,
+body {
+  min-height: 99.7vh;
 }
 
 .App {
   min-width: 100vw;
+  margin-bottom: -65px;
 }
 
 body {
@@ -41,7 +44,6 @@ a {
 form {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
   input,
   textarea {
     margin-bottom: 1em;

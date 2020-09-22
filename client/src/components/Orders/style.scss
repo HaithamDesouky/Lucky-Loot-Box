@@ -4,7 +4,10 @@
   padding: 1em;
   border-radius: 0.5em;
   box-shadow: 0 0.25em 1.5em -0.5em hsla(220, 30%, 80%, 0.5);
-  margin-bottom: 1em;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 3em;
 
   #view-order {
     padding: 0;
@@ -30,5 +33,9 @@
 @media only screen and (max-width: 600px) {
   #view-order {
     padding: 2rem;
+  }
+
+  .individual-order {
+    width: 85%;
   }
 }

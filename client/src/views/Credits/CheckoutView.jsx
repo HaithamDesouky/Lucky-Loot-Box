@@ -14,7 +14,7 @@ class CheckoutView extends Component {
         <h1 className="checkout-title">Products in basket</h1>
 
         <div>
-          <div>
+          <div className="basket">
             {(basket.length &&
               basket.map(item => (
                 <LootBox

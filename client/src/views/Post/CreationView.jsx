@@ -45,25 +45,12 @@ class PostCreationView extends Component {
 
   render() {
     return (
-      <div>
-        <PostForm
-          content={this.state.content}
-          onContentChange={this.handleContentChange}
-          onPhotoChange={this.handlePhotoChange}
-          onFormSubmission={this.handlePostCreation}
-        />
-        {/* <form onSubmit={this.handlePostCreation}>
-          <label htmlFor="content-input">Post Content</label>
-          <textarea
-            id="content-input"
-            placeholder="Write your post here..."
-            name="content"
-            value={this.state.content}
-            onChange={this.handleInputChange}
-          />
-          <button>Create Post</button>
-        </form> */}
-      </div>
+      <PostForm
+        content={this.state.content}
+        onContentChange={this.handleContentChange}
+        onPhotoChange={this.handlePhotoChange}
+        onFormSubmission={this.handlePostCreation}
+      />
     );
   }
 }
