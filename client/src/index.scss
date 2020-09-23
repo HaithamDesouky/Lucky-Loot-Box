@@ -4,17 +4,22 @@
   margin: 0;
   font-family: 'Space Mono', monospace;
 }
-html,
-.App,
-body {
-  min-height: 99.7vh;
-}
 
 .App {
   min-width: 100vw;
   margin-bottom: -50px;
+  min-height: 100vh;
+  position: relative;
 }
 
+html,
+body {
+  min-height: 100vh;
+}
+
+#root {
+  position: relative;
+}
 @media screen and(max-width: 660px) {
   .App {
     margin-bottom: -65px;
