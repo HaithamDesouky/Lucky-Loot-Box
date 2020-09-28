@@ -73,7 +73,7 @@ passport.use(
         if (passwordMatchesHash) {
           callback(null, user);
         } else {
-          callback(new Error('WRONG_PASSWORD'));
+          callback(new Error('Password is incorrect. Please try again'));
         }
       })
       .catch(error => {
