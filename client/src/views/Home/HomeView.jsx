@@ -15,12 +15,12 @@ class HomeView extends Component {
 
   render() {
     return (
-      <div className="container">
+      <>
         <Greeting />
         <About />
         <Mystery />
         <Carousel />
-      </div>
+      </>
     );
   }
 }

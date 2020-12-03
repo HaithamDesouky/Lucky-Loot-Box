@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function index() {
   return (
-    <div>
+    <div class="container">
       <div id="section-header">
         <h1>How does it work?</h1>
       </div>

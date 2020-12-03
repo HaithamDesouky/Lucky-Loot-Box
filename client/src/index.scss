@@ -7,7 +7,7 @@
 
 .App {
   min-width: 100vw;
-  margin-bottom: -50px;
+  margin-bottom: -70px;
   min-height: 100vh;
   position: relative;
 }
@@ -78,7 +78,10 @@ button {
   border: 1px solid rgb(189, 62, 23);
   border-radius: 0.5em;
   padding: 1em;
-  color: white;
+
+  p {
+    color: black;
+  }
 }
 
 .container {
