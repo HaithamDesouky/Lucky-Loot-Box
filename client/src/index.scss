@@ -15,6 +15,7 @@
 html,
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 #root {
@@ -28,7 +29,6 @@ body {
 
 body {
   margin: 0 auto;
-  max-width: 60em;
   line-height: 2;
   margin-left: 3rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)),
